@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script> 
+  </head>
+  <body>
+     <div id="centerContainer">
+      <section class="top-banner-section">
+        <div class="img-container">
+          <img
+          class="memSQL-logo" src="https://assets.brandfolder.com/o4z5g8-fga64o-a1n2o7/original/MemSQL_horizontal_lockup_grey-white_logo.png"
+          alt="MemSQL logo">
+        </div>
+        <div class="banner-shaddow"></div>
+      </section>
+
+      <div class="ellipse">
+        <i class="icon far fa-calendar" id="calIcon"></i>
+      </div>
+      
+      <section class="book-demo" id="book-demo-section">
+        <div class="book-a-demo">
+          <h1 class="book-demo-title" id="book-demo-title">Book a Demo</h1>
+          <p class="book-demo-text" id="book-demo-text">Help us customize your demo by answering the <br/> following questions below</p>
+        </div>
+      </section>
+
+      <section class="form-section" id="biz-detail-form">
+        <form id="biz-form" class="biz-detail-form">
+          <div class="group-eami-and-size">
+            <label class="business-email-text">Business email</lable> <br>
+            <input type="text" id="email-id" class="biz-input-border biz-input-field" placeholder="|" required>
+          </div>
+          <div class="hide-email-error">
+            <i class="fas fa-exclamation-triangle"></i>
+            Please make sure this isn't a personal email address
+          </div>
+
+            <div class="dropdown">
+                <label class="biz-size-text">Business size</label><br>
+                <select id = "myList-biz-size"  class="biz-size-select" required >
+                  <option class="select-option" value = "0">Select option <i class="fas fa-angle-down"></i></option>
+                  <option value = "1">1-10</option>
+                  <option value = "2">11-50</option>
+                  <option value = "3">51-100</option>
+                  <option value = "4">101-250</option>
+                  <option value = "5">250+</option>
+                </select>
+            </div>
+            <div class="hide-size-error">
+              <i class="fas fa-exclamation-triangle"></i>
+            Please make sure to slect an option
+            </div>
+
+          <div class="toggle-biz-importance" id="biz-importa-toggle">
+            <label class="biz-importance-text">What is the most important thing to you in a solution<br></label>
+            <div class="radio-list">
+              <div class="radio-label"><input class="radio-importance" type="radio" name="importance" value="1"> <label class="radio-text">Real-time Analytics</label></div>
+              <div class="radio-label"><input class="radio-importance" type="radio" name="importance" value="3"><label class="radio-text"> Query Response Time </label></div>
+              <div class="radio-label"><input class="radio-importance" type="radio" name="importance" value="5"> <label class="radio-text">High Concurrency</label></div>
+              <div class="radio-label"><input class="radio-importance" type="radio" name="importance" value="7"><label class="radio-text"> Fast Data Ingest</label></div>
+            </div>
+            <div class="radio-list">
+              <div class="radio-label"><input class="radio-importance" type="radio" name="importance" value="2"><label class="radio-text"> Scalability</label> </div>
+              <div class="radio-label"> <input class="radio-importance" type="radio" name="importance" value="4"><label class="radio-text"> Document storage</label></div>
+              <div class="radio-label"> <input class="radio-importance" type="radio" name="importance" value="6"><label class="radio-text"> Full text search</label></div>
+              <div class="radio-label"> <input class="radio-importance" type="radio" name="importance" value="8"> <label class="radio-text">Price</label></div>
+            </div>
+          </div>
+          <div class="hide-importance-error">
+            <i class="fas fa-exclamation-triangle"></i>
+            Please make sure to slect an option
+            </div>
+          <div class="submit-btn-container">
+            <button class="submit-btn" >Continue to Schedule a Time <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="footer"></div>
+        </form>
+      </section>
+     </div>
+  </body>
+</html>
