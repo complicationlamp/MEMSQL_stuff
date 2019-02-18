@@ -47,7 +47,7 @@ $('#biz-form').submit(function(e){
   //prevent the normal submission of the form
       e.preventDefault();
 
-      const targetImportance = [1, 5, 7];
+      const targetImportance = [4, 6, 8];
 
       // clears out the form to render the qualified and unqualified responce
       $('#biz-detail-form').remove();
